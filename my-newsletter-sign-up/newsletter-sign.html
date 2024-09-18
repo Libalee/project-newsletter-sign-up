@@ -21,8 +21,8 @@
                 <li class="lines"><span  class="lines-text">And much more!</span></li>
             </ul>
             
-            <form>
-                <label>Email adress</label>
+            <form class="line-break">
+                <label id="email-label">Email adress</label>
                 <input type="text" name="email" id="email-form">
             </form>
             <button>Subscribe to monthly newsletter</button>
@@ -84,19 +84,35 @@
     }
 
     .list {
-        padding-left: 7%;
+        padding-left: 0%;
 
         list-style: none;
-        list-style-image: url(icon-list.svg);
     }
 
     .lines {
-        vertical-align: middle;
-        height: 31px;
+        background: url(icon-list.svg) left top no-repeat;
+
+        padding-left: 32px;
+        height: 32px;
     }
 
     .lines-text{
         vertical-align: top;
+    }
+
+    .line-break {
+        display: grid;
+    }
+
+    #email-label {
+        font-size: 12px;
+        font-weight: bold;
+
+        padding-bottom: 8px;
+    }
+
+    #email-form {
+        margin-bottom: 16px;
     }
 
     #image {
