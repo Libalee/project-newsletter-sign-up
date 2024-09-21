@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Newsletter Sign Up</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' href='style.css'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src='main.js'></script>
 </head>
@@ -34,187 +34,12 @@
         <div id="image">
             <img
             class="illustration"
-            src="illustration-sign-up-desktop.svg">
+            src="images/illustration-sign-up-desktop.svg">
         </div>
     </div>
     
 </body>
 
-<style>
-    html{
-        box-sizing: border-box;
-    }
-
-    *, *::before, *::after {
-        box-sizing: inherit;
-    }
-
-    body{
-        background-color:hsl(235, 18%, 26%);
-        font-family: Roboto;
-        font-weight: 400;
-    }
-
-    .card {
-        display: flex;
-        width: 50%;
-        height: 450px;
-
-        border-radius: 5%;
-
-        margin: 25%;
-        margin-top: 10%;
-
-
-        background-color: white;
-    }
-
-    .second-card {
-        display: block;
-        width: 25%;
-        height: 350px;
-
-        border-radius: 5%;
-
-        margin: 37.5%;
-        margin-top: 10%;
-
-        padding: 25px;
-
-
-        background-color: white;
-    }
-
-    #text {
-        width: 55%;
-
-        padding-top: 6%;
-        padding-bottom: 10%;
-        padding-left: 7%;
-        padding-right: 0%;
-
-        font-size: 16px;
-    }
-
-    .title {
-        margin: 0px;
-
-        font-size: 300%;
-    }
-
-    .list {
-        padding-left: 0%;
-
-        list-style: none;
-    }
-
-    .lines {
-        background: url(icon-list.svg) left top no-repeat;
-
-        padding-left: 32px;
-        height: 32px;
-    }
-
-    .lines-text{
-        vertical-align: top;
-    }
-
-    .line-break {
-        display: grid;
-    }
-
-    .same-line {
-        display: flex;
-    }
-
-    #email-label, #valid-email {
-        font-size: 12px;
-        font-weight: bold;
-
-        padding-bottom: 8px;
-    }
-
-    .valid-email-class, .invalid-email {
-        color: white;
-        user-select: none;
-
-        margin: 0px;
-
-        padding-left: 50%;
-    }
-
-    .invalid-email {
-        color: hsl(4, 100%, 67%);
-        user-select: auto;
-    }
-
-    .email-form-class, .invalid-email-form {
-        margin-bottom: 16px;
-
-        border: hsl(231, 7%, 60%) solid 0.5px;
-        border-radius: 6px;
-
-        padding: 12px;
-        padding-left: 20px;
-    }
-
-    .invalid-email-form{
-        border-color: hsl(4, 100%, 80%);
-        background-color: hsl(4, 100%, 95%);
-    }
-
-    .button-dark-grey {
-        width: 100%;
-        height: 40px;
-
-        border: hsl(234, 29%, 20%) solid 0px;
-        border-radius: 12px;
-
-        color: hsl(0, 0%, 100%);
-        font-weight: bold;
-
-        background-color: hsl(234, 29%, 20%);
-    }
-
-    #email-form:hover, .button-dark-grey:hover {
-        cursor: pointer;
-    }
-
-    .button-dark-grey:hover {
-        background: linear-gradient( hsl(4, 100%, 50%),  hsl(4, 100%, 67%));
-    }
-
-    #confirmation-title {
-        margin: 0px;
-        margin-top: 10px;
-
-        font-size: 250%;
-    }
-
-    #confirmation-parag {
-        font-size: 90%;
-    }
-
-    #image {
-        width: 45%;
-
-        padding: 2.5%;
-        padding-right: 0%;
-    }
-
-    .illustration {
-        width: 100%;
-        height: 100%;
-
-        border-radius: 0%;
-    }
-
-    @media(max-width: 756px) {
-        #card {
-            color: red;
-        }
-    }
-</style>
 
 <script>
     function isEmailValid(emailAdress) {
@@ -230,7 +55,7 @@
 
         if(isEmailValid(userEmail)) {
             firstCard.innerHTML = `
-        <img src="icon-success.svg">
+        <img src="images/icon-success.svg">
 
         <h2 id="confirmation-title">Thanks for subscribing!</h2>
 
